@@ -1,0 +1,11 @@
+<ul>
+  <% @product.each do |product| %>
+    <li>
+      <%= product.name %> 
+      <% if product.description.present? %>
+        - <%= prodroduct.description %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+<%= image_tag @product.imageproduct.url(:medium) %>
